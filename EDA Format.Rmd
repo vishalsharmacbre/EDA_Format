@@ -1,0 +1,82 @@
+---
+title: "COMPANY NAME - EXPLORATORY DATA ANALYSIS"
+author: "Prepared by: CBRE Business Analytics"
+date: '`r paste("Date:",Sys.Date())`'
+output:
+  pdf_document: 
+    latex_engine: xelatex
+header-includes:
+- \usepackage{titling}
+- \usepackage{fancyhdr}
+- \pretitle{\begin{center} \includegraphics[width=4in,height=2in]{CBRE_Group_logo.svg.png}\Huge\\
+  \end{center}\begin{center}\LARGE}
+- \pagestyle{fancy}
+- \fancyhead[L]{\includegraphics[width=1in,height=0.5in]{CBRE_Group_logo.svg.png}\LARGE\\}
+- \fancyhead[R]{}
+- \renewcommand{\headrulewidth}{0.7mm}
+- \renewcommand{\footrulewidth}{0.35mm}
+- \posttitle{\end{center}}
+- \usepackage{fontspec}
+- \setmainfont{Futura Bk BT}
+- \usepackage{caption}
+- \captionsetup[figure]{labelformat=empty}
+- \usepackage{xcolor}
+- \usepackage{sectsty}
+- \definecolor{energizinggreen}{RGB}{191,216,87}
+- \allsectionsfont{\color{energizinggreen}}
+- \setlength{\headheight}{50pt}
+- \setlength{\footskip}{-50pt}
+always_allow_html: yes
+allow_html_dependencies: yes
+urlcolor: blue
+---
+
+\newpage
+\hypersetup{linkcolor=black}
+\tableofcontents
+\newpage
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+options(tinytex.verbose = TRUE)
+options("scipen"=100, "digits"=4)
+```
+
+```{r libraries}
+library(psych)
+library(dplyr)
+library(tidyr)
+```
+
+## 1. Heading 1
+
+Description
+
+## 2. Heading 2
+
++ Point 1
++ Point 2
+  + Sub point 1
+  + Sub Point 2
++ Point 2
+
+## 3. Heading 3
+
+### 3.1 Sub-Heading 1
+
+Description
+
+### 3.2 Sub-Heading 2
+
+Description 
+
+\newpage
+
+## Support
+
+In case of any question or support, please contact:
+
++ [Shane Trefftzs (Shane.Trefftzs@cbre.com)](mailto:Shane.Trefftzs@cbre.com)
++ [Dana Lindquist (Dana.Lindquist@cbre.com)](mailto:Dana.Lindquist@cbre.com)
++ [Inderpaul Singh (Inderpaul.Singh@cbre.com)](mailto:Inderpaul.Singh@cbre.com)
++ [Vishal Sharma (Vishal.Sharma1@cbre.com)](mailto:Vishal.Sharma1@cbre.com)
